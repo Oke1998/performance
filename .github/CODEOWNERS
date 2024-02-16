@@ -1,0 +1,55 @@
+# Documentation/Infrastructure
+/admin                                      @mukeshpanchal27 @felixarntz
+/tests/admin                                @mukeshpanchal27 @felixarntz
+/bin                                        @mukeshpanchal27 @felixarntz
+/.github                                    @mukeshpanchal27 @felixarntz
+
+# Focus: Database
+/modules/database                           @olliejones
+/tests/modules/database                     @olliejones
+/tests/testdata/modules/database            @olliejones
+
+# Focus: Images
+/modules/images                             @adamsilverstein @getsource @joemcgill
+/tests/modules/images                       @adamsilverstein @getsource @joemcgill
+/tests/testdata/modules/images              @adamsilverstein @getsource @joemcgill
+
+# Focus: JS & CSS
+/modules/js-and-css                         @westonruter
+/tests/modules/js-and-css                   @westonruter
+/tests/testdata/modules/js-and-css          @westonruter
+
+# Focus: Measurement
+/modules/measurement                        @joemcgill
+/tests/modules/measurement                  @joemcgill
+/tests/testdata/modules/measurement         @joemcgill
+
+# Focus: Object Cache
+/modules/object-cache                       @tillkruss @spacedmonkey
+/tests/modules/object-cache                 @tillkruss @spacedmonkey
+/tests/testdata/modules/object-cache        @tillkruss @spacedmonkey
+
+# Module: WebP Uploads
+/modules/images/webp-uploads                                                @adamsilverstein @felixarntz
+/tests/modules/images/webp-uploads                                          @adamsilverstein @felixarntz
+/tests/testdata/modules/images/webp-uploads                                 @adamsilverstein @felixarntz
+
+# Module: WebP Support Health Check
+/modules/images/webp-support                                                @adamsilverstein
+/tests/modules/images/webp-support                                          @adamsilverstein
+/tests/testdata/modules/images/webp-support                                 @adamsilverstein
+
+# Module: Autoloaded Options Health Check
+/modules/database/audit-autoloaded-options                                  @manuelRod @felixarntz
+/tests/modules/database/audit-autoloaded-options                            @manuelRod @felixarntz
+/tests/testdata/modules/database/audit-autoloaded-options                   @manuelRod @felixarntz
+
+# Module: Enqueued Assets Health Check
+/modules/js-and-css/audit-enqueued-assets                                   @manuelRod
+/tests/modules/js-and-css/audit-enqueued-assets                             @manuelRod
+/tests/testdata/modules/js-and-css/audit-enqueued-assets                    @manuelRod
+
+# Module: Dominant Color Images
+/modules/images/dominant-color-images                                       @pbearne @spacedmonkey
+/tests/modules/images/dominant-color-images                                 @pbearne @spacedmonkey
+/tests/testdata/modules/images/dominant-color-images                        @pbearne @spacedmonkey

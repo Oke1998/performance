@@ -1,0 +1,49 @@
+{
+  "name": "performance",
+  "license": "GPL-2.0-or-later",
+  "repository": "git+https://github.com/WordPress/performance.git",
+  "engines": {
+    "node": ">=20.10.0",
+    "npm": ">=10.2.3"
+  },
+  "devDependencies": {
+    "@octokit/rest": "^19.0.5",
+    "@wordpress/env": "^8.13.0",
+    "@wordpress/scripts": "^26.19.0",
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "lodash": "4.17.21"
+  },
+  "scripts": {
+    "changelog": "./bin/plugin/cli.js changelog",
+    "since": "./bin/plugin/cli.js since",
+    "readme": "./bin/plugin/cli.js readme",
+    "translations": "./bin/plugin/cli.js translations",
+    "build-plugins": "./bin/plugin/cli.js build-plugins",
+    "test-plugins": "./bin/plugin/cli.js test-plugins",
+    "test-plugins-multisite": "./bin/plugin/cli.js test-plugins --sitetype=multi",
+    "enabled-modules": "./bin/plugin/cli.js enabled-modules",
+    "format-js": "wp-scripts format",
+    "lint-js": "wp-scripts lint-js",
+    "format-php": "composer format",
+    "phpstan": "composer phpstan",
+    "lint-php": "composer lint",
+    "test-php": "wp-env run tests-cli --env-cwd=/var/www/html/wp-content/plugins/$(basename $(pwd)) composer test",
+    "test-php-multisite": "wp-env run tests-cli --env-cwd=/var/www/html/wp-content/plugins/$(basename $(pwd)) composer test-multisite",
+    "wp-env": "wp-env",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.php": [
+      "composer run-script lint",
+      "composer run-script phpstan"
+    ],
+    "*.js": [
+      "npm run lint-js"
+    ]
+  }
+}
